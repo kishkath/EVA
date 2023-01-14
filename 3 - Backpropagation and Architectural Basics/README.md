@@ -28,3 +28,9 @@ The Excel file contains:
 --------
 
 * AIM: Modifying/Tuning CNN Architecture to get 99.4% Validation accuracy using less than 20K parameters and of less than 20 Epochs.
+
+Parameters used: 14,666
+
+Logs: 
+
+
