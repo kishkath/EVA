@@ -1,7 +1,8 @@
 
 # Part-1: 
 --------
-### Figure: Neural Network where the parameters such as weights (noted as w,..) & neurons (the circles that are visible) & layers
+
+* Figure: Neural Network where the parameters such as weights (noted as w) & neurons (the circles that are visible) & layers
 
        Note: For ease usage, can view the .jpg files['forward.JPG','backward.JPG','learning1.JPG','learning2.JPG'] attached on behalf of excel file.
 --------------------
@@ -36,6 +37,7 @@ The Excel file contains:
 - 5 Layered network with 4 convolution layers and a fully connected layer 
 
 - Logs: 
+
        Epoch:  1
        --------------
        loss=0.14157654345035553 batch_id=468: 100%|██████████| 469/469 [00:17<00:00, 26.12it/s]
