@@ -1,5 +1,5 @@
 
-# Part-1: 
+# Part-1:  Excel sheet showing backpropagation. 
 --------
 
 * Figure: Neural Network where the parameters such as weights (noted as w) & neurons (the circles that are visible) & layers
@@ -25,7 +25,7 @@ The Excel file contains:
 
 
 
-# Part-2: 
+# Part-2: Trying to tune the model and add special features (Such as Batch Normalization, Dropout) to get a targeted val-accuracy.
 --------
 
 * AIM: Modifying/Tuning CNN Architecture to get 99.4% Validation accuracy using less than 20K parameters and of less than 20 Epochs.
