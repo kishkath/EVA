@@ -1,6 +1,8 @@
 # EVA
 EVA (Extensive Vision Program) Cohort 8 by The School of AI.
 
+The Repository contains the assignments & study materials of computer vision.
+
 # Vision 
 
 - Vision is the ideal way of viewing the things,
