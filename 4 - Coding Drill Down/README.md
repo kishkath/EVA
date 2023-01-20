@@ -10,6 +10,19 @@ Here, we are gonna build the model with a decent architecture having following c
    - Target is 99.4% (consistent approach towards the target)
 
 
+Structure of Building: 
+
+1. Importing libraries
+2. Creating Custom Dataloader class
+3. Loading the datasets & transforming images via batches are per our targets.
+5. Set up configurations regarding the processors
+6. Building the Intuition for developing the architecture
+7. Building Model Architectures & knowing Parameters.
+8. Training and testing by passing loaded train & val datasets.
+9. Training for desired EPOCHS.
+10. Checking the plots of losses & analysis them.
+
+
 #### Outcomes:
 
 1. Description about Model
