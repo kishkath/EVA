@@ -10,7 +10,10 @@ Here, we are gonna build the model with a decent architecture having following c
    - Target is 99.4% (consistent approach towards the target)
 
 
-Structure of Building: 
+Steps for building the code of neural network: 
+
+![buildCode](https://user-images.githubusercontent.com/60026221/213779336-835d8219-b732-419d-8562-8cd3b7e2b14f.jpeg)
+
 
 1. Importing libraries
 2. Creating Custom Dataloader class
