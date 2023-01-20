@@ -5,9 +5,12 @@
 
 Here, we are gonna build the model with a decent architecture having following conditions:
 
-   - 1. Less than 10K parameters
-   - 2. Less than 16 Epochs
-   - 3. Target is 99.4% (consistent approach towards the target)
+   - Less than 10K parameters
+   - Less than 16 Epochs
+   - Target is 99.4% (consistent approach towards the target)
+
+
+#### Outcomes:
 
 1. Description about Model
 
