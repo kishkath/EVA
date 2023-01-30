@@ -20,7 +20,7 @@ In DNN's, we perform Batch-Normalization which meant scaling & shifting the valu
 
 **Group-NOrmalization**: Normalization is performed across the channels by dividing in to groups and normalizes the features within each group. 
 
-![download](https://user-images.githubusercontent.com/60026221/215570701-78e21d08-e6d7-4126-9702-e90594161dbd.jpeg)
+![images](https://user-images.githubusercontent.com/60026221/215571530-ede0ccd5-51f3-4472-979f-3abc12c2edc6.jpeg)
 
 The session-5 Folder contains the MNIST model ran with Batch-normalization(incl. L1 Regularization) & Layer-normalization & Group-Normalization.
 
