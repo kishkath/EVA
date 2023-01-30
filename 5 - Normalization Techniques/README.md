@@ -10,4 +10,25 @@ So, as you may got atleast a small idea what & why scaling is used. The AI world
 
 Same here applies for memory & computation & networks, larger the data larger the work needed. Lets move to DNN's, here we might face a problem of gradient explosion because of larger values, so to avoid this risks we will scale the data and get them in a range of (-1,1) which is a standard range. 
 
-In DNN's, we perform Batch-Normalization which meant scaling & shifting the values, as there are other normalization techniques such as Layer Normalization, Group Normalization, Instance Normalization.
+In DNN's, we perform Batch-Normalization which meant scaling & shifting the values, as there are other normalization techniques such as Layer Normalization, Group Normalization, Instance Normalization.**The current folder of session 5 deals with these techniques of normalization, where and why and how of the techniques** 
+
+**Important Point**: In DNN's, Normalization mean normalizing and standardizing (data with a zero mean & 1 std)
+
+**Batch-Normalization**: Normalization is performed across a **batch of BATCHSIZE** across all layers.
+
+**Layer-Normalization**: Normalization is performed on a layer at a time, whereas in Batch-normalization single part of each layer is performed.
+
+**Group-NOrmalization**: Normalization is performed across the channels by dividing in to groups and normalizes the features within each group. 
+
+![download](https://user-images.githubusercontent.com/60026221/215570701-78e21d08-e6d7-4126-9702-e90594161dbd.jpeg)
+
+The session-5 Folder contains the MNIST model ran with Batch-normalization(incl. L1 Regularization) & Layer-normalization & Group-Normalization.
+
+Training parameters didnt bothered much , while the test plots resulted in different ways for BN & GN as shown below: 
+
+Graphs: 
+
+
+
+Images: 
+
