@@ -24,24 +24,26 @@ In DNN's, we perform Batch-Normalization which meant scaling & shifting the valu
 
 The session-5 Folder contains the MNIST model ran with Batch-normalization(incl. L1 Regularization) & Layer-normalization & Group-Normalization.
 
-Results:
-Note: The best & highest accuracies aren't written here, but the ones with less provoke to overfitting.
+      Results:
+      Note: The best & highest accuracies aren't written here, but the ones with less provoke to overfitting.
 
-GN has achieved good result
+      GN has achieved good result
 
-Top Accuracies:
+      Top Accuracies:
 
-BN with L1 Reg : 98.31 & 97.7
+      BN with L1 Reg : 98.31 & 97.7
 
-GN : 99.36 & 99.28
+      GN : 99.36 & 99.28
 
-LN: 99.29 & 99.21
+      LN: 99.29 & 99.21
+      
+      ------------------------------------
 
-Analysis:
+      Analysis:
 
-Here, LN & GN has performed a quite good, whereas BN + L1 Reg dipped in the performance as compared to them. GN can be considered as a competitive to BN.
+      Here, LN & GN has performed a quite good, whereas BN + L1 Reg dipped in the performance as compared to them. GN can be considered as a competitive to BN.
 
-Training parameters didnt bothered much , while the test plots resulted in different ways for BN & GN as shown below: 
+      Training parameters didnt bothered much , while the test plots resulted in different ways for BN & GN as shown below: 
 
 Graphs: 
 
