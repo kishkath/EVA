@@ -28,6 +28,8 @@ Training parameters didnt bothered much , while the test plots resulted in diffe
 
 Graphs: 
 
+                                  Training Loss,                                   Testing Loss, Below is Test Accuracy
+                                  Below One is Training Accuracy
 ![plots](https://user-images.githubusercontent.com/60026221/215577951-372c4d8a-957e-4b2d-8003-f351bd032ecc.png)
 
 
