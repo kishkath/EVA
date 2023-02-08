@@ -45,8 +45,8 @@ Fix the network: https://colab.research.google.com/drive/1qlewMtxcAJT6fIJdmMh8pS
     
 4. Ran For 84 Epochs in CIFAR10_model.ipynb.
 5. Analysis: 
-    * With out augmentation reached training accuracy of 86% and val-accuracy of 77%, as it seems to be ok but not good. There is a need to avoid overfitting and add variance to data. Hence, we have procedded with augmenting the images using albumentations library. 
-    * With augmentation, it performed quite well. 
+    * **less_weighted-model.ipynb:** With out augmentation reached training accuracy of 86% and val-accuracy of 77%, as it seems to be ok but not good. There is a need to avoid overfitting and add variance to data. Hence, we have procedded with augmenting the images using albumentations library. 
+    * **CIFAR10_model.ipynb:** With augmentation, it performed quite well. 
 7. Got the accuracies of:
 
 
@@ -58,4 +58,3 @@ Fix the network: https://colab.research.google.com/drive/1qlewMtxcAJT6fIJdmMh8pS
 
 
 
-# Proceedings to add in README.md: Need to add plots & images with augmentations & explain albumentations and briefly about sessions.
