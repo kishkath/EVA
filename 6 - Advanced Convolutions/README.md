@@ -16,6 +16,11 @@ Fix the network: https://colab.research.google.com/drive/1qlewMtxcAJT6fIJdmMh8pS
    
 
 1. As a First step, we have to know about data (CIFAR-10):
+      
+     * Documentation:  https://pytorch.org/vision/stable/generated/torchvision.datasets.CIFAR10.html
+     * The CIFAR-10 dataset consists of 60000 32x32 colour images in 10 classes, with 6000 images per class. There are 50000 training images and 10000 test images.
+     * Baseline Model from PyTorch: https://pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html
+    
 
 2. Images:
 
@@ -39,7 +44,10 @@ Fix the network: https://colab.research.google.com/drive/1qlewMtxcAJT6fIJdmMh8pS
     * There are total of 187,418 Parameters ~ 187K 
     
 4. Ran For 84 Epochs in CIFAR10_model.ipynb.
-5. Got the accuracies of:
+5. Analysis: 
+    * With out augmentation reached training accuracy of 86% and val-accuracy of 77%, as it seems to be ok but not good. There is a need to avoid overfitting and add variance to data. Hence, we have procedded with augmenting the images using albumentations library. 
+    * With augmentation, it performed quite well. 
+7. Got the accuracies of:
 
 
 
