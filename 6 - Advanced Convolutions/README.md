@@ -19,13 +19,27 @@ Fix the network: https://colab.research.google.com/drive/1qlewMtxcAJT6fIJdmMh8pS
 
 2. Images:
 
-  * Below, you can see few of training images which are augmented with cutout/shiftscaleRotate/Horizontal Flip
-  
-    ![train](https://user-images.githubusercontent.com/60026221/217634262-a1666ba4-d650-4b5b-a5cb-71adb7aaea40.png)
+     * Below, you can see few of training images which are augmented with cutout/shiftscaleRotate/Horizontal Flip
 
-  * Below, you can see few of testing images which should be augmented as we use this for validations/testing.
-  
-    ![test](https://user-images.githubusercontent.com/60026221/217634284-1ce4c361-8fc9-45b8-8930-2fb6dc2ffad2.png)
+       ![train](https://user-images.githubusercontent.com/60026221/217634262-a1666ba4-d650-4b5b-a5cb-71adb7aaea40.png)
+
+     * Below, you can see few of testing images which should be augmented as we use this for validations/testing.
+
+       ![test](https://user-images.githubusercontent.com/60026221/217634284-1ce4c361-8fc9-45b8-8930-2fb6dc2ffad2.png)
+
+3. Architecture is on GPU and is of format: 
+   
+    * 4 Blocks of Convs + GAP LAYER
+       
+       * Block1: Conv1(3X3X16) with padding + Conv2(3x3x32) + Conv3(3x3x32) 
+       * Block2: Conv4(5x5x128 i,e,,kernel incl. of dilation) with dilated convolution (Dilation=2) + Conv5(3x3x64) + Conv6(3x3x32) with stride of 2 and padding
+       * Block3: [Conv7(3x3x128)+Conv8(1x1x256] a depthwise convolution + Conv9(3x3x32) 
+       * BLock4: Conv10(3x3x32) + conv11(1x1x16) + conv12(3x3x10) 
+       * GAP LAYER : Kernel_size = 3
+    * There are total of 187,418 Parameters ~ 187K 
+    
+4. Ran For 84 Epochs in CIFAR10_model.ipynb.
+5. Got the accuracies of:
 
 
 
