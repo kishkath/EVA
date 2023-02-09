@@ -1,4 +1,4 @@
-  # CIFAR-10 (CIFAR10_model.ipynb/CIFAR10_62Epochs.ipynb)
+  # CIFAR-10 (CIFAR10.ipynb)
                                                         
                                                         
                                                         
@@ -22,9 +22,13 @@ Fix the network: https://colab.research.google.com/drive/1qlewMtxcAJT6fIJdmMh8pS
 
       C. utils.py which has useful functions like normalizing, dataloading, briefly called as helper functions and also returns class accuracy
 
-      D. CIFAR10_model.ipynb and CIFAR10_62Epochs.ipynb are of same architecture, they just ran for different number of epochs. The CIFAR10_model which was planned for 84 and CIFAR10_62Epochs was planned for 62 Epochs.
+      D. CIFAR10.ipynb is the one which has given the target val-accuracy with receptive Field greater than 44.
       
-      E. less_weighted-model.ipynb is a notebook which contains all features in it which doesnt import files like main.py, utils, model and architecture consists of 191K Parameters.
+         &
+         
+         CIFAR10_62Epochs.ipynb is of different architecture and with few more parameters of 192K, which is iterated for 62 Epochs, and it nearly reached the target but couldn't achieve it and has receptive field of 35.
+      
+
 
    
    
@@ -52,70 +56,81 @@ Synopsis:
    
     * 4 Blocks of Convs + GAP LAYER
        
-       * Block1: [Conv1(3X3X16) with padding + Conv2(3x3x32) + Conv3(3x3x32)]
+       * Block1: [Conv1(3X3X16) with padding + Conv2(3x3x32) with Padding + Conv3(3x3x32) with Padding & stride]
        * Block2: [Conv4(5x5x128 i,e,kernel incl. of dilation2) with dilated convolution (Dilation=2) + Conv5(3x3x64) + Conv6(3x3x32) with stride of 2 and padding]
-       * Block3: [[Conv7(3x3x128)+Conv8(1x1x256] a depthwise convolution + Conv9(3x3x32)]
-       * BLock4: [Conv10(3x3x32) + conv11(1x1x16) + conv12(3x3x10)]
-       * GAP LAYER : Kernel_size = 3
+       * Block3: [[Conv7(3x3x128)+Conv8(1x1x256] a depthwise convolution ]
+       * BLock4: [Conv10(3x3x32) + conv11(1x1x16) + conv12(1x1x10)]
+       * GAP LAYER : Kernel_size = 1
        
-    * There are total of **187,418 Parameters ~ 187K**
+    * There are total of **176,826 Parameters ~ 177K**
     
-4. Ran For 84 Epochs in CIFAR10_model.ipynb.
+4. Ran For 84 Epochs in CIFAR10.ipynb.
 
 6. Analysis: 
 
-    * **less_weighted-model.ipynb:** With out augmentation reached training accuracy of 86% and val-accuracy of 77%, as it seems to be ok but not good. There is a need to avoid overfitting and add variance to data. Hence, we have procedded with augmenting the images using albumentations library and this notebook architecture is  4 convolution blocks are used with total of 12 layers in-it. The architecture also contains the dilation convolution (1-layer) and depthwise (1-layer) along with pointwise(1-layer). It summarizes as 9 convolution layers + 1 Dilation layer + 1 Depthwise seperable convolutions are used and they made up the number of **parameters as: 1,91,514**
+    * Base Model: **less_weighted-model.ipynb:** With out augmentation reached training accuracy of 86% and val-accuracy of 77%, as it seems to be ok but not good. There is a need to avoid overfitting and add variance to data. Hence, we have procedded with augmenting the images using albumentations library and this notebook architecture is  4 convolution blocks are used with total of 12 layers in-it. The architecture also contains the dilation convolution (1-layer) and depthwise (1-layer) along with pointwise(1-layer). It summarizes as 9 convolution layers + 1 Dilation layer + 1 Depthwise seperable convolutions are used and they made up the number of **parameters as: 1,91,514**
      
-    * **CIFAR10_model.ipynb:** With augmentation, it performed quite well but has to be improved more. 
-    
     * **CIFAR10_62.ipynb:** With augmentation, it ran for all determined 62 epochs.
+    
+    * Improved model: **CIFAR10.ipynb** With augmentation, it performed quite well but has to be improved more.
     
     
 7. Accuracies: 
    
     * Model:
     ---------
-      **CIFAR10_model.ipynb**
-      
-        EPOCH: 45/84
+      **CIFAR10.ipynb**
+                 
+          EPOCH: 84/84, 85 is achieved at Epoch 59. The last two epoch accuracies are shown below
+        
+                EPOCH: 82
+                Loss=0.6692079305648804 Batch_id=390 train-Accuracy=80.47: 100%|██████████| 391/391 [00:12<00:00, 32.05it/s] 
 
-        Loss=0.7905847430229187 Batch_id=390 train-Accuracy=76.01: 100%|██████████| 391/391 [00:21<00:00, 18.23it/s]
+                Test set: Average loss: 0.0032, val-Accuracy: 8615/10000 (86.15%)
 
-        Test set: Average loss: 0.0038, val-Accuracy: 8328/10000 (83.28%)
+                EPOCH: 83
+                Loss=0.465636670589447 Batch_id=390 train-Accuracy=81.17: 100%|██████████| 391/391 [00:12<00:00, 32.02it/s]  
+
+                Test set: Average loss: 0.0033, val-Accuracy: 8570/10000 (85.70%)
       
       **CIFAR10_62Epochs.ipynb** 
       
-        EPOCH: 58/62
-        
-        Loss=0.6362294554710388 Batch_id=390 train-Accuracy=76.80: 100%|██████████| 391/391 [00:20<00:00, 19.35it/s]
-        
-        Test set: Average loss: 0.0037, val-Accuracy: 8423/10000 (84.23%)
+          EPOCH: 58/62
+
+                Loss=0.6362294554710388 Batch_id=390 train-Accuracy=76.80: 100%|██████████| 391/391 [00:20<00:00, 19.35it/s]
+
+                Test set: Average loss: 0.0037, val-Accuracy: 8423/10000 (84.23%)
+              
+ 8. Plots: 
+ 
+                   ![accuracy](https://user-images.githubusercontent.com/60026221/217802973-2802314e-6c37-4af6-a159-6323b4163d38.JPG)
+ 
+ 
+                   ![loss](https://user-images.githubusercontent.com/60026221/217802984-4b8ec9f6-26d0-45d6-8024-4c946fc83c20.JPG)
+
  
     
     * Class Wise: 
     -------------
-    **CIFAR10_62Epochs.ipynb:**
-    
-        plane : 93.1%
-
-        car : 96.43%
-
-        bird : 63.64%
-
-        cat : 79.41%
-
-        deer : 70.37%
-
-        dog : 66.67% 
-
-        frog : 91.67% 
-
-        horse : 88.0%
-
-        ship : 93.75% 
-
-        truck : 87.18% 
-    
+    **CIFAR10.ipynb:**
+   
+          car : 96.43
+          
+          bird : 72.73
+          
+          cat : 67.65
+          
+          deer : 77.78
+          
+          dog : 78.79
+          
+          frog : 88.89
+          
+          horse : 92.0
+          
+          ship : 93.75
+          
+          truck : 87.18
 
 
 
