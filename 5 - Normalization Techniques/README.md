@@ -1,3 +1,4 @@
+## Tweaking data & its architecture(Copy_of_SlimerModel_with_norm_techniques.ipynb):
 
 **Session5: Normalization Techniques** - Describing about why there is a need for normalization, standardization, and different types of normalization such as Layer Normalization, Group Normalization, Batch Normalization.
 
