@@ -76,12 +76,21 @@ Synopsis:
    
     * Model:
     ---------
-    
-      EPOCH: 45/84
+      **CIFAR10_model.ipynb**
+      
+        EPOCH: 45/84
 
-      Loss=0.7905847430229187 Batch_id=390 train-Accuracy=76.01: 100%|██████████| 391/391 [00:21<00:00, 18.23it/s]
+        Loss=0.7905847430229187 Batch_id=390 train-Accuracy=76.01: 100%|██████████| 391/391 [00:21<00:00, 18.23it/s]
 
-      Test set: Average loss: 0.0038, val-Accuracy: 8328/10000 (83.28%)
+        Test set: Average loss: 0.0038, val-Accuracy: 8328/10000 (83.28%)
+      
+      **CIFAR10_62Epochs.ipynb** 
+      
+        EPOCH: 58/62
+        
+        Loss=0.6362294554710388 Batch_id=390 train-Accuracy=76.80: 100%|██████████| 391/391 [00:20<00:00, 19.35it/s]
+        
+        Test set: Average loss: 0.0037, val-Accuracy: 8423/10000 (84.23%)
  
     
     * Class Wise: 
