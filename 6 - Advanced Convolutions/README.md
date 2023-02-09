@@ -11,7 +11,7 @@ Assignment:
 
 Fix the network: https://colab.research.google.com/drive/1qlewMtxcAJT6fIJdmMh8pSf2e-dh51Rw
 
-   <img src="https://user-images.githubusercontent.com/60026221/217057292-3ec2cb8a-79f4-4494-ab39-33c8d1116037.JPG" width=35% height=35%>
+   <img src="https://user-images.githubusercontent.com/60026221/217057292-3ec2cb8a-79f4-4494-ab39-33c8d1116037.JPG" width=40% height=40%>
 
 
 * The repo contains 
