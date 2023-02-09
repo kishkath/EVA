@@ -103,14 +103,15 @@ Synopsis:
               
  8. Plots: 
  
-                   ![accuracy](https://user-images.githubusercontent.com/60026221/217802973-2802314e-6c37-4af6-a159-6323b4163d38.JPG)
+      ![accuracy](https://user-images.githubusercontent.com/60026221/217802973-2802314e-6c37-4af6-a159-6323b4163d38.JPG)
  
  
-                   ![loss](https://user-images.githubusercontent.com/60026221/217802984-4b8ec9f6-26d0-45d6-8024-4c946fc83c20.JPG)
+ 
+      ![loss](https://user-images.githubusercontent.com/60026221/217802984-4b8ec9f6-26d0-45d6-8024-4c946fc83c20.JPG)
 
  
     
-    * Class Wise: 
+9. Class Wise Accuracy score:
     -------------
     **CIFAR10.ipynb:**
    
