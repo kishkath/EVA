@@ -16,16 +16,15 @@ Fix the network: https://colab.research.google.com/drive/1qlewMtxcAJT6fIJdmMh8pS
 
 ### The repo contains 
 
-   **A. main.py** where the necessary ***training & testing happens and returns scores***.
-   
-   B. **model.py** which has the ***architecture built using PyTorch***.
-   
-   C. **utils.py** which has useful functions like ***normalizing, dataloading, briefly called as helper functions and also returns class accuracy***
-   
-   D. CIFAR10_model.ipynb and CIFAR10_62Epochs.ipynb are of same architecture, they just ran for different number of epochs. The CIFAR10_model which was planned for 84
-   and CIFAR10_62Epochs was planned for 62 Epochs.
-   
-   D. ***2 Notebooks one with more 200K parameters which provided good result but have overfitting, which is trained without using any special features and other than less than 200K parameters which used special features.***
+     ***A. main.py where the necessary training & testing happens and returns scores***
+
+     ***B. model.py which has the architecture built using PyTorch***
+
+     ***C. utils.py which has useful functions like ***normalizing, dataloading, briefly called as helper functions and also returns class accuracy***
+
+     ***D. CIFAR10_model.ipynb and CIFAR10_62Epochs.ipynb are of same architecture, they just ran for different number of epochs. The CIFAR10_model which was planned for 84 and CIFAR10_62Epochs was planned for 62 Epochs.
+
+     ***E. 2 Notebooks one with more 200K parameters which provided good result but have overfitting, which is trained without using any special features and other than less than 200K parameters which used special features.***
    
 Synopsis:
 -----------------
