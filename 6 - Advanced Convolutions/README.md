@@ -24,9 +24,7 @@ Fix the network: https://colab.research.google.com/drive/1qlewMtxcAJT6fIJdmMh8pS
 
       D. CIFAR10.ipynb is the one which has given the target val-accuracy with receptive Field greater than 44.
       
-         &
-         
-         CIFAR10_62Epochs.ipynb is of different architecture and with few more parameters of 192K, which is iterated for 62 Epochs, and it nearly reached the target but couldn't achieve it and has receptive field of 35.
+    
       
 
 
@@ -70,7 +68,6 @@ Synopsis:
 
     * Base Model: **less_weighted-model.ipynb:** With out augmentation reached training accuracy of 86% and val-accuracy of 77%, as it seems to be ok but not good. There is a need to avoid overfitting and add variance to data. Hence, we have procedded with augmenting the images using albumentations library and this notebook architecture is  4 convolution blocks are used with total of 12 layers in-it. The architecture also contains the dilation convolution (1-layer) and depthwise (1-layer) along with pointwise(1-layer). It summarizes as 9 convolution layers + 1 Dilation layer + 1 Depthwise seperable convolutions are used and they made up the number of **parameters as: 1,91,514**
      
-    * **CIFAR10_62.ipynb:** With augmentation, it ran for all determined 62 epochs.
     
     * Improved model: **CIFAR10.ipynb** With augmentation, it performed quite well but has to be improved more.
     
@@ -93,13 +90,7 @@ Synopsis:
 
                 Test set: Average loss: 0.0033, val-Accuracy: 8570/10000 (85.70%)
       
-      **CIFAR10_62Epochs.ipynb** 
-      
-          EPOCH: 58/62
-
-                Loss=0.6362294554710388 Batch_id=390 train-Accuracy=76.80: 100%|██████████| 391/391 [00:20<00:00, 19.35it/s]
-
-                Test set: Average loss: 0.0037, val-Accuracy: 8423/10000 (84.23%)
+ 
               
  8. Plots: 
  
