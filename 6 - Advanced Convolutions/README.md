@@ -22,6 +22,9 @@ Fix the network: https://colab.research.google.com/drive/1qlewMtxcAJT6fIJdmMh8pS
    
    C. **utils.py** which has useful functions like ***normalizing, dataloading, briefly called as helper functions and also returns class accuracy***
    
+   D. CIFAR10_model.ipynb and CIFAR10_62Epochs.ipynb are of same architecture, they just ran for different number of epochs. The CIFAR10_model which was planned for 84
+   and CIFAR10_62Epochs was planned for 62 Epochs.
+   
    D. ***2 Notebooks one with more 200K parameters which provided good result but have overfitting, which is trained without using any special features and other than less than 200K parameters which used special features.***
    
 Synopsis:
@@ -95,26 +98,27 @@ Synopsis:
     
     * Class Wise: 
     -------------
+    **CIFAR10_62Epochs.ipynb:**
     
-      plane : 93.1%
-      
-      car : 96.43%
-      
-      bird : 63.64%
-      
-      cat : 79.41%
-      
-      deer : 70.37%
-      
-      dog : 66.67% 
-      
-      frog : 91.67% 
-      
-      horse : 88.0%
-      
-      ship : 93.75% 
-      
-      truck : 87.18% 
+        plane : 93.1%
+
+        car : 96.43%
+
+        bird : 63.64%
+
+        cat : 79.41%
+
+        deer : 70.37%
+
+        dog : 66.67% 
+
+        frog : 91.67% 
+
+        horse : 88.0%
+
+        ship : 93.75% 
+
+        truck : 87.18% 
     
 
 
