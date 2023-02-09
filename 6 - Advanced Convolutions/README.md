@@ -1,4 +1,4 @@
-  # CIFAR-10 (CIFAR10_model.ipynb)
+  # CIFAR-10 (CIFAR10_model.ipynb/CIFAR10_62Epochs.ipynb)
                                                         
                                                         
                                                         
@@ -63,6 +63,14 @@ Synopsis:
     * **less_weighted-model.ipynb:** With out augmentation reached training accuracy of 86% and val-accuracy of 77%, as it seems to be ok but not good. There is a need to avoid overfitting and add variance to data. Hence, we have procedded with augmenting the images using albumentations library and this notebook architecture is  4 convolution blocks are used with total of 12 layers in-it. The architecture also contains the dilation convolution (1-layer) and depthwise (1-layer) along with pointwise(1-layer). It summarizes as 9 convolution layers + 1 Dilation layer + 1 Depthwise seperable convolutions are used and they made up the number of **parameters as: 1,91,514**
      
     * **CIFAR10_model.ipynb:** With augmentation, it performed quite well but has to be improved more. 
+    
+    * **CIFAR10_62.ipynb:** With augmentation, it ran for all determined 62 epochs and gave 84 as highest val-accuracy:
+    
+        EPOCH: 58/62
+        
+        Loss=0.6362294554710388 Batch_id=390 train-Accuracy=76.80: 100%|██████████| 391/391 [00:20<00:00, 19.35it/s]
+        
+        Test set: Average loss: 0.0037, val-Accuracy: 8423/10000 (84.23%)
     
 7. Accuracies: 
    
