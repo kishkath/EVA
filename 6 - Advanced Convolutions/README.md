@@ -1,4 +1,8 @@
-**Session-6: Advanced Convolutions** 
+                                                        # CIFAR-10 (CIFAR10_model.ipynb)
+                                                        
+                                                      **Session-6: Advanced Convolutions** 
+                           -----------------------------------------------------------------------------------------------
+                                                      
 
 Assignment: 
 
@@ -63,8 +67,35 @@ Synopsis:
     * Model:
     ---------
     
+      EPOCH: 45/84
+
+      Loss=0.7905847430229187 Batch_id=390 train-Accuracy=76.01: 100%|██████████| 391/391 [00:21<00:00, 18.23it/s]
+
+      Test set: Average loss: 0.0038, val-Accuracy: 8328/10000 (83.28%)
+ 
+    
     * Class Wise: 
     -------------
+    
+      plane : 93.1%
+      
+      car : 96.43%
+      
+      bird : 63.64%
+      
+      cat : 79.41%
+      
+      deer : 70.37%
+      
+      dog : 66.67% 
+      
+      frog : 91.67% 
+      
+      horse : 88.0%
+      
+      ship : 93.75% 
+      
+      truck : 87.18% 
     
 
 
