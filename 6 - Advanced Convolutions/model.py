@@ -114,22 +114,26 @@ class Net(nn.Module):
             
             # RF_in = 23 
             # Jump_out = 2 
-            # RF_out = RF_in + (K-1)*Jn = 23 + (3-1)*2 = 23 + 4 = 25
+            # RF_out = RF_in + (K-1)*Jn = 23 + (3-1)*2 = 23 + 4 = 27
             
             nn.Conv2d(in_channels=32,out_channels=16,kernel_size=(1,1)),
             nn.BatchNorm2d(16),
             # (5-1) + 1 = 5
             
-            # RF_in = 25 
+            # RF_in = 27 
             # Jump_out = 2 
-            # RF_out = RF_in + (K-1)*Jin = 25 + (1-1)*2 = 25
+            # RF_out = RF_in + (K-1)*Jin = 27 + (1-1)*2 = 27
             nn.Conv2d(in_channels=16,out_channels=10,kernel_size=(3,3)))
            
-            # RF_in = 25 
+            # RF_in = 27 
             # Jump_out = 2
-            # RF_out = RF_in + (K-1)*Jin = 25 + (3-1)*2 = 29
+            # RF_out = RF_in + (K-1)*Jin = 27 + (3-1)*2 = 31
         self.gap = nn.AvgPool2d(3)
         
+        # RF_n = 31, Jump_out = 2, RF_out = RF_n + (K-1)*Jin = 31 + (3-1)*2 = 31 + 4 = 35
+        
+        
+        # RF : 35
         self.dropout = nn.Dropout2d(0.1)
         
       
