@@ -26,10 +26,6 @@ Fix the network: https://colab.research.google.com/drive/1qlewMtxcAJT6fIJdmMh8pS
       
     
       
-
-
-   
-   
 Synopsis:
 -----------------
 
@@ -61,6 +57,8 @@ Synopsis:
        * GAP LAYER : Kernel_size = 1
        
     * There are total of **176,826 Parameters ~ 177K**
+    
+    * Has Receptive Field of 59.
     
 4. Ran For 84 Epochs in CIFAR10.ipynb.
 
