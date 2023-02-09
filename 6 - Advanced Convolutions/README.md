@@ -68,13 +68,8 @@ Synopsis:
      
     * **CIFAR10_model.ipynb:** With augmentation, it performed quite well but has to be improved more. 
     
-    * **CIFAR10_62.ipynb:** With augmentation, it ran for all determined 62 epochs and gave 84 as highest val-accuracy:
+    * **CIFAR10_62.ipynb:** With augmentation, it ran for all determined 62 epochs.
     
-        EPOCH: 58/62
-        
-        Loss=0.6362294554710388 Batch_id=390 train-Accuracy=76.80: 100%|██████████| 391/391 [00:20<00:00, 19.35it/s]
-        
-        Test set: Average loss: 0.0037, val-Accuracy: 8423/10000 (84.23%)
     
 7. Accuracies: 
    
@@ -125,7 +120,7 @@ Synopsis:
 
 
 
-#### Pending : To get it run for more epochs and need to either tweak architecture or use regularizations to improve the performance.
+#### Improvement Plan : To get it run for more epochs and need to either tweak architecture or use regularizations to improve the performance.
 
 
 
