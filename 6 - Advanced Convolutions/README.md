@@ -42,19 +42,19 @@ Synopsis:
 
      * Below, you can see few of testing images which should be augmented as we use this for validations/testing.
 
-       ![test](https://user-images.githubusercontent.com/60026221/217634284-1ce4c361-8fc9-45b8-8930-2fb6dc2ffad2.png)
+       <img src="https://user-images.githubusercontent.com/60026221/217634284-1ce4c361-8fc9-45b8-8930-2fb6dc2ffad2.png" width=140% height = 140%>
 
 3. Architecture is on GPU and is of format: 
    
     * 4 Blocks of Convs + GAP LAYER
        
-       * Block1: Conv1(3X3X16) with padding + Conv2(3x3x32) + Conv3(3x3x32) 
-       * Block2: Conv4(5x5x128 i,e,,kernel incl. of dilation) with dilated convolution (Dilation=2) + Conv5(3x3x64) + Conv6(3x3x32) with stride of 2 and padding
-       * Block3: [Conv7(3x3x128)+Conv8(1x1x256] a depthwise convolution + Conv9(3x3x32) 
-       * BLock4: Conv10(3x3x32) + conv11(1x1x16) + conv12(3x3x10) 
+       * Block1: [Conv1(3X3X16) with padding + Conv2(3x3x32) + Conv3(3x3x32)]
+       * Block2: [Conv4(5x5x128 i,e,kernel incl. of dilation2) with dilated convolution (Dilation=2) + Conv5(3x3x64) + Conv6(3x3x32) with stride of 2 and padding]
+       * Block3: [[Conv7(3x3x128)+Conv8(1x1x256] a depthwise convolution + Conv9(3x3x32)]
+       * BLock4: [Conv10(3x3x32) + conv11(1x1x16) + conv12(3x3x10)]
        * GAP LAYER : Kernel_size = 3
        
-    * There are total of 187,418 Parameters ~ 187K 
+    * There are total of **187,418 Parameters ~ 187K**
     
 4. Ran For 84 Epochs in CIFAR10_model.ipynb.
 
@@ -62,7 +62,7 @@ Synopsis:
 
     * **less_weighted-model.ipynb:** With out augmentation reached training accuracy of 86% and val-accuracy of 77%, as it seems to be ok but not good. There is a need to avoid overfitting and add variance to data. Hence, we have procedded with augmenting the images using albumentations library and this notebook architecture is  4 convolution blocks are used with total of 12 layers in-it. The architecture also contains the dilation convolution (1-layer) and depthwise (1-layer) along with pointwise(1-layer). It summarizes as 9 convolution layers + 1 Dilation layer + 1 Depthwise seperable convolutions are used and they made up the number of **parameters as: 1,91,514**
      
-    * **CIFAR10_model.ipynb:** With augmentation, it performed quite well. 
+    * **CIFAR10_model.ipynb:** With augmentation, it performed quite well but has to be improved more. 
     
 7. Accuracies: 
    
@@ -103,7 +103,7 @@ Synopsis:
 
 
 
-
+#### Pending : To get it run for more epochs and need to either tweak architecture or use regularizations to improve the performance.
 
 
 
