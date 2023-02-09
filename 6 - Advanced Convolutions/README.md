@@ -1,7 +1,10 @@
-                                                        # CIFAR-10 (CIFAR10_model.ipynb)
+  # CIFAR-10 (CIFAR10_model.ipynb)
                                                         
-                                                      **Session-6: Advanced Convolutions** 
-                           -----------------------------------------------------------------------------------------------
+                                                        
+                                                        
+                                                  
+  **Session-6: Advanced Convolutions** : Describing about normal convolutions and its expensive computations, introduction of dilation convolution and depthwise convolutions and group convolutions and their expensive computation compared to other type of convolution and their usage and their methodologies.
+                         
                                                       
 
 Assignment: 
