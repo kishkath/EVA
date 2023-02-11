@@ -10,7 +10,8 @@ Assignment:
 
 ### The Repo contains 
 
-      A. CIFAR10_ResNet18.ipynb: A jupyter notebook, which executes the resnet-18 layered implementation. The files are being imported from repo: 
+      A. CIFAR10_ResNet18.ipynb: A Jupyter notebook, which executes the resnet-18 layered implementation. 
+                                 The files are being imported from repo:  https://github.com/kishkath/CIFAR10
                                  The complete implementation is based on importing files and classes and its methods. 
                                  
       B. MiSCLASSIFIED_IMAGES  : Image which are mis-classified.
