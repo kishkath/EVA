@@ -56,9 +56,9 @@ Synopsis:
        * BLock4: [Conv10(3x3x32) + conv11(1x1x16) + conv12(1x1x10)]
        * GAP LAYER : Kernel_size = 1
        
-    * There are total of **176,826 Parameters ~ 177K**
+    * There are total of **170106 Parameters ~ 170K**
     
-    * Has Receptive Field of 59.
+    * Has Receptive Field of 47.
     
 4. Ran For 84 Epochs in CIFAR10.ipynb.
 
