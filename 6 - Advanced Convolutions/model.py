@@ -110,7 +110,7 @@ class Net(nn.Module):
         # RF_in = 47, Jin = 4, S = 1,Jout = 4
         # RF_out = 47 + (1-1)*4 = 47 + 0 = 47
         
-        self.dropout = nn.Dropout2d(0.1)
+        self.dropout = nn.Dropout2d(0.05)
         
       
         
