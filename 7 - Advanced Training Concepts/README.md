@@ -27,4 +27,11 @@ Assignment:
       
 * Plots: 
 
-![image](https://user-images.githubusercontent.com/60026221/218268390-22fb0e06-a5c5-430d-a02b-f515dcf3ccc4.png)
+
+![loss](https://user-images.githubusercontent.com/60026221/218268512-59d7fb99-8371-418d-99f9-cbc2e9c1bdd6.JPG)
+
+
+![acc](https://user-images.githubusercontent.com/60026221/218268524-3e1406d1-ad6c-491c-a217-4c5b8484ac8a.JPG)
+
+
+
