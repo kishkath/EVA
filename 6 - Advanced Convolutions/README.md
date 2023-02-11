@@ -51,9 +51,9 @@ Synopsis:
     * 4 Blocks of Convs + GAP LAYER
        
        * Block1: [Conv1(3X3X16) with padding + Conv2(3x3x32) with Padding + Conv3(3x3x32) with Padding & stride]
-       * Block2: [Conv4(5x5x128 i,e,kernel incl. of dilation2) with dilated convolution (Dilation=2) + Conv5(3x3x64) + Conv6(3x3x32) with stride of 2 and padding]
+       * Block2: [Conv4(5x5x128 i,e,kernel incl. of dilation2) with dilated convolution (Dilation=2) with padding1 + Conv5(3x3x64) with padding1 + Conv6(3x3x32) with stride of 2 and padding]
        * Block3: [[Conv7(3x3x128)+Conv8(1x1x256] a depthwise convolution ]
-       * BLock4: [Conv10(3x3x32) + conv11(1x1x16) + conv12(1x1x10)]
+       * BLock4: [Conv10(3x3x32) + conv11(3x3x16) + conv12(1x1x10)]
        * GAP LAYER : Kernel_size = 1
        
     * There are total of **170106 Parameters ~ 170K**
