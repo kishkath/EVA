@@ -19,3 +19,12 @@ Assignment:
       
       
 * The model runs for 20 EPOCHS and got the training-accuracy of 96% & validation-accuracy of 83%.
+ 
+      EPOCH: 19
+      --------
+      Loss=0.34115737676620483 Batch_id=390 train-Accuracy=96.82: 100%|██████████| 391/391 [00:44<00:00,  8.72it/s] 
+      Test set: Average loss: 0.0059, val-Accuracy: 8300/10000 (83.00%)
+      
+* Plots: 
+
+![image](https://user-images.githubusercontent.com/60026221/218268390-22fb0e06-a5c5-430d-a02b-f515dcf3ccc4.png)
