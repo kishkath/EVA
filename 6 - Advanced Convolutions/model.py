@@ -42,19 +42,18 @@ class Net(nn.Module):
             
         # Jin = Jout
         self.conv2 = nn.Sequential(
-            nn.Conv2d(in_channels=32,out_channels=128,kernel_size=(3,3),dilation=2),
+            nn.Conv2d(in_channels=32,out_channels=128,kernel_size=(3,3),padding=1,dilation=2),
             nn.BatchNorm2d(128),
             nn.ReLU(),
-            # (16-5) + 1 = 12 
+            # (16+2-5) + 1 = 14
             
             # RF_in = 7, Jin = 2, S = 1, Jout = 2*1 = 2
             # RF_out = 7 + (5-1)*2 = 7+8 = 15
-           
-          
-            nn.Conv2d(in_channels=128,out_channels=64,kernel_size=(3,3)),
+
+            nn.Conv2d(in_channels=128,out_channels=64,kernel_size=(3,3),padding=1),
             nn.BatchNorm2d(64),
             nn.ReLU(),
-            # (12-3) + 1 = 10
+            # (14+2-3) + 1 = 14
             
             # RF_in = 15, Jin = 2, S = 1,Jout = 2 
             # RF_out = 15 + (3-1)*2 = 15 + 4 = 19
@@ -62,55 +61,54 @@ class Net(nn.Module):
             nn.Conv2d(in_channels=64,out_channels=32,kernel_size=(3,3),padding=1,stride=2),
             nn.BatchNorm2d(32),
             nn.ReLU())
-            # (10+2-3)/2+1 = 5
+            # (14+2-3)/2+1 = 7
             
             # RF_in = 19, Jin = 2, S = 2,Jout = 2*2 = 4
             # RF_out = 19 + (3-1)*2 = 19 + 4 = 23 
             
         # Jin = Jout
         self.conv3 = nn.Sequential(
-            nn.Conv2d(in_channels=32, out_channels=128, kernel_size=3, groups=8),
-            nn.BatchNorm2d(128),
-            # (5-3) + 1 = 3
+            nn.Conv2d(in_channels=32, out_channels=32, kernel_size=3, groups=32),
+            # (7-3) + 1 = 5
             
             # RF_in = 23, Jin = 4, S = 1,Jout = 4
             # RF_out = 23 + (3-1)*4 = 23 + 8 = 31
-            nn.Conv2d(in_channels=128, out_channels=64, kernel_size=1),
+            nn.Conv2d(in_channels=32, out_channels=64, kernel_size=1),
             nn.BatchNorm2d(64),
             nn.ReLU())
-            # (3-1) + 1 = 3
+            # (5-1) + 1 = 5
             
             # RF_in = 31, Jin = 4, S = 1,Jout = 4
-            # RF_out = 31 + (3-1)*4 = 31 + 8 = 39
+            # RF_out = 31 + (1-1)*4 = 31 + 0 = 31
            
         # Jin = Jout
         self.conv4 = nn.Sequential(
             nn.Conv2d(in_channels=64,out_channels=32,kernel_size=(3,3)),
             nn.BatchNorm2d(32),
             nn.ReLU(),
+            # (5-3) + 1 = 3
+            
+            # RF_in = 31, Jin = 4, S = 1,Jout = 4
+            # RF_out = 31 + (3-1)*4 = 31 + 8 = 39
+            
+            nn.Conv2d(in_channels=32,out_channels=16,kernel_size=(3,3)),
+            nn.BatchNorm2d(16),
             # (3-3) + 1 = 1
             
             # RF_in = 39, Jin = 4, S = 1,Jout = 4
             # RF_out = 39 + (3-1)*4 = 39 + 8 = 47
-            
-            nn.Conv2d(in_channels=32,out_channels=16,kernel_size=(1,1)),
-            nn.BatchNorm2d(16),
-            # (1-1) + 1 = 1
-            
-            # RF_in = 47, Jin = 4, S = 1,Jout = 4
-            # RF_out = 47 + (1-1)*4 = 47 + 4 = 51
            
             nn.Conv2d(in_channels=16,out_channels=10,kernel_size=(1,1)))
             # (1-1) + 1 = 1
         
-            # RF_in = 51, Jin = 4, S = 1,Jout = 4
-            # RF_out = 51 + (1-1)*4 = 51 + 4 = 55
+            # RF_in = 47, Jin = 4, S = 1,Jout = 4
+            # RF_out = 47 + (1-1)*4 = 47 + 0 = 47
 
         self.gap = nn.AvgPool2d(1)
         # (1-1) + 1 = 1
         
-        # RF_in = 55, Jin = 4, S = 1,Jout = 4
-        # RF_out = 55 + (1-1)*4 = 55 + 4 = 59
+        # RF_in = 47, Jin = 4, S = 1,Jout = 4
+        # RF_out = 47 + (1-1)*4 = 47 + 0 = 47
         
         self.dropout = nn.Dropout2d(0.1)
         
