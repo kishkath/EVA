@@ -76,27 +76,34 @@ Synopsis:
     ---------
       **CIFAR10.ipynb**
                  
-          EPOCH: 84/84, 85 is achieved at Epoch 59. The last two epoch accuracies are shown below
+          EPOCH: 84/84, 85% is achieved at Epoch 56. The last two epoch accuracies are shown below
         
                 EPOCH: 82
-                Loss=0.6692079305648804 Batch_id=390 train-Accuracy=80.47: 100%|██████████| 391/391 [00:12<00:00, 32.05it/s] 
+                Loss=0.787566602230072 Batch_id=390 train-Accuracy=81.32: 100%|██████████| 391/391 [00:14<00:00, 27.40it/s]  
 
-                Test set: Average loss: 0.0032, val-Accuracy: 8615/10000 (86.15%)
+                Test set: Average loss: 0.0034, val-Accuracy: 8574/10000 (85.74%)
 
                 EPOCH: 83
-                Loss=0.465636670589447 Batch_id=390 train-Accuracy=81.17: 100%|██████████| 391/391 [00:12<00:00, 32.02it/s]  
+                Loss=0.6199796795845032 Batch_id=390 train-Accuracy=81.27: 100%|██████████| 391/391 [00:14<00:00, 27.21it/s] 
 
-                Test set: Average loss: 0.0033, val-Accuracy: 8570/10000 (85.70%)
+                Test set: Average loss: 0.0034, val-Accuracy: 8559/10000 (85.59%)
+
       
  
               
  8. Plots: 
  
-      ![accuracy](https://user-images.githubusercontent.com/60026221/217802973-2802314e-6c37-4af6-a159-6323b4163d38.JPG)
+      * Accuracy: 
+      
+      ![6_acc](https://user-images.githubusercontent.com/60026221/218295043-9f7e734f-943f-495b-b4f4-c8cbfe2e672d.JPG)
+
+      
+      * Loss:
+      
+       ![6_loss](https://user-images.githubusercontent.com/60026221/218295064-30658536-7220-4ba7-ab4f-e3d9052a4538.JPG)
+
  
  
- 
-      ![loss](https://user-images.githubusercontent.com/60026221/217802984-4b8ec9f6-26d0-45d6-8024-4c946fc83c20.JPG)
 
  
     
