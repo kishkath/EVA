@@ -35,4 +35,15 @@ Assignment:
 ![acc](https://user-images.githubusercontent.com/60026221/218268524-3e1406d1-ad6c-491c-a217-4c5b8484ac8a.JPG)
 
 
+* Few of Mis-classified Images & its model explainability with GRADCAM.
+
+
+![misclasfied](https://user-images.githubusercontent.com/60026221/218516617-65f3b2dc-7f4f-4fde-956d-ea2ea0d6fec7.png)
+
+
+- GRADCAM VISUALS for 2 mis-classifications:
+
+![gradCAM1](https://user-images.githubusercontent.com/60026221/218516910-7ef94d4b-b6d0-4a85-b6fc-1f946858dc4d.JPG)
+
+
 
