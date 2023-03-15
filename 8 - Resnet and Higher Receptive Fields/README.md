@@ -30,6 +30,8 @@ Assignment:
 
 * LR_MAX = 0.3
 
+![lr_finder_s8](https://user-images.githubusercontent.com/60026221/225389542-a995d30d-2d73-4354-9925-a5ebf5267409.JPG)
+
 Plots: 
 ------
 
