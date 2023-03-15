@@ -1,5 +1,5 @@
-                                                    ## ResNet & Receptive Fields
-                                                    ----------------------------
+## ResNet & Receptive Fields
+----------------------------
 
 **Session-8: Resnet & Receptive Fields** - Describing about the architecture of architecture's like Resnet, Inception, VGG & the importance of receptive fields, impact of larger receptive fields, how the does the image & its variations occur in larger receptive field. How useful is the RF parameter in CNN's. Usage of One-Cycle-Policy(OCP) which is a kind of cyclic learning rate(CLR) but it only goes up and down once, whereas CLR continues to oscillate to & fro.
 
