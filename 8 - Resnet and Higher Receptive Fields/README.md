@@ -19,14 +19,16 @@ Assignment:
       
 * The model runs for 24 EPOCHS and training-accuracy of 93% and validation-accuracy of 88%.
 
-         EPOCH: 23
-         Current Learning Rate:  0.01678010204081637
-         Loss=1.5123331546783447 Batch_id=97 train-Accuracy=93.73: 100%|██████████| 98/98 [00:21<00:00,  4.55it/s]
-         updated Learning Rate:  0.0001301020408163156
+        EPOCH: 23
+        Current Learning Rate:  0.01678010204081637
+        Loss=1.5123331546783447 Batch_id=97 train-Accuracy=93.73: 100%|██████████| 98/98 [00:21<00:00,  4.55it/s]
+        updated Learning Rate:  0.0001301020408163156
 
-         Test set: Average loss: 0.0032, val-Accuracy: 8857/10000 (88.57%)
+        Test set: Average loss: 0.0032, val-Accuracy: 8857/10000 (88.57%)
+        
+* LR_MIN = 0.05 
 
-
+* LR_MAX = 0.3
 
 Plots: 
 ------
