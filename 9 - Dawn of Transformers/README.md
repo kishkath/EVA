@@ -22,11 +22,11 @@ Assignment:
 
 ### The Repo contains 
 
-         resnet_clr.ipynb: A Jupyter notebook, which executes the built architecture and 8-layered implementation 
-                                             Architecture:  C-C-C-U-U-U-U-F
+         resnet_clr.ipynb: Architecture: C-C-C-U-U-U-U-F
+                           Jupyter notebook, which executes the built architecture and 8-layered implementation                   
                            The files are being imported from repo:  https://github.com/kishkath/CIFAR10-OCP
                            The complete implementation is based on importing files and classes and its methods. 
-                             
+
       
       
 * The model runs for 24 EPOCHS and training-accuracy of 93% and validation-accuracy of 88%.
