@@ -1,5 +1,5 @@
-## ResNet (CIFAR10_ResNet18)
-------------------------------
+                                                    ## ResNet & Receptive Fields
+                                                    ----------------------------
 
 **Session-8: Resnet & Receptive Fields** - Describing about the architecture of architecture's like Resnet, Inception, VGG & the importance of receptive fields, impact of larger receptive fields, how the does the image & its variations occur in larger receptive field. How useful is the RF parameter in CNN's. Usage of One-Cycle-Policy(OCP) which is a kind of cyclic learning rate(CLR) but it only goes up and down once, whereas CLR continues to oscillate to & fro.
 
@@ -19,12 +19,12 @@ Assignment:
       
 * The model runs for 24 EPOCHS and training-accuracy of 93% and validation-accuracy of 88%.
 
-              EPOCH: 23
-              Current Learning Rate:  0.01678010204081637
-              Loss=1.5123331546783447 Batch_id=97 train-Accuracy=93.73: 100%|██████████| 98/98 [00:21<00:00,  4.55it/s]
-              updated Learning Rate:  0.0001301020408163156
+         EPOCH: 23
+         Current Learning Rate:  0.01678010204081637
+         Loss=1.5123331546783447 Batch_id=97 train-Accuracy=93.73: 100%|██████████| 98/98 [00:21<00:00,  4.55it/s]
+         updated Learning Rate:  0.0001301020408163156
 
-              Test set: Average loss: 0.0032, val-Accuracy: 8857/10000 (88.57%)
+         Test set: Average loss: 0.0032, val-Accuracy: 8857/10000 (88.57%)
 
 
 
