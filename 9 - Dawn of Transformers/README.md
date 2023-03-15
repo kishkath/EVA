@@ -22,7 +22,8 @@ Assignment:
 
 ### The Repo contains 
 
-         resnet_clr.ipynb: A Jupyter notebook, which executes the resnet-18 layered implementation with the help of OCP to find lr.
+         resnet_clr.ipynb: A Jupyter notebook, which executes the built architecture and 8-layered implementation 
+                                             Architecture:  C-C-C-U-U-U-U-F
                            The files are being imported from repo:  https://github.com/kishkath/CIFAR10-OCP
                            The complete implementation is based on importing files and classes and its methods. 
                              
