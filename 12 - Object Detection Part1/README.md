@@ -1,6 +1,10 @@
 # YoloV3
 
-Opencv, a popular open-source library where one can use it for image processings. This opencv library has made a library with darknet which will include the YoloV3 through api. We can directly run the model from the api and use it for the testing data (The testing data should only contain the 80Classes of Yolov3, only those will get predicted as it is a standard model). The results of the notebook are placed in 'opencv_inf_images'.
+Opencv, a popular open-source library where one can use it for image processings. This opencv library has made a library with darknet which will include the YoloV3
+
+through api. We can directly run the model from the api and use it for the testing data (The testing data should only contain the 80Classes of Yolov3, only those will
+
+get predicted as it is a standard model). The results of the notebook are placed in 'opencv_inf_images'.
 
 # Pretrained-Yolov3 
 
@@ -17,7 +21,7 @@ The following changes have been made to the forked version of repo:
 1. Yolov3-custom.cfg: A config file in 'cfg' folder, which has all the necessary configurations to get the model learn from data and here
 we modify the number of filters, as we will be using 3 anchors, we do get filters in the final layer as (4+1+4)*3 = 27 filters and need to modify the classes as number of classes we are using. 
 
-     Line No: 636-643, 722-729, 809-816 
+       Line No: 636-643, 722-729, 809-816 
 
 2. utils.py : A python module in 'utils' folder where we convert tensors to long() tensors & also modify them to be with gpu instead of cpu.
 
@@ -36,10 +40,10 @@ we modify the number of filters, as we will be using 3 anchors, we do get filter
 
 classes used: 
 
-     1. A cricket 'bat' 
-     2. Cricket 'helmet'
-     3. 'smart_watch' 
-     4. 'umpire'
+       1. A cricket 'bat' 
+       2. Cricket 'helmet'
+       3. 'smart_watch' 
+       4. 'umpire'
 
 ### First Iteration: 
 
