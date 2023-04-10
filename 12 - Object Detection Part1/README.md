@@ -6,6 +6,11 @@ through api. We can directly run the model from the api and use it for the testi
 
 get predicted as it is a standard model). The results of the notebook are placed in 'opencv_inf_images'.
 
+### predicted: 
+
+      ![inference1](https://user-images.githubusercontent.com/60026221/230815812-5d26c5ac-e43e-45ba-a49c-929dbb060e2c.PNG)
+
+
 # Pretrained-Yolov3 
 
 YOLO(You Look Only Once), a cnn based architecture where the image will be seen only once through the iteration. The repo has been cloned from
@@ -51,6 +56,11 @@ we modify the number of filters, as we will be using 3 anchors, we do get filter
 2. Trained for 300 epochs.
 3. The videos are tested which are provided in "input_videos_run1"
 4. The output videos are provided in "output_videos_run1" 
+
+### Predicted: 
+
+    ![inference5](https://user-images.githubusercontent.com/60026221/230815972-f8d06708-fdfe-4da7-af71-a6c7de542a80.PNG)
+
 
 Analysis: As all the 4 class images are picked from 'google', each image consists of only a single object (for few images, there exists helmet, bat in a single image). But our testing data (i,e,,) output videos are of the real videos of cricket match, and the model performed good as per data. As from the videos, it is not been able to predict bat due to its movement which is very quick while a person is batting. Helmet and umpire has better predictions. The following iteration has to be made by adding few more images with the real-time images. So, to make it better have taken the output videos of run1 and extracted the frames from it and has trained run2 on those images along with addition some more frames of multiple videos.
 
