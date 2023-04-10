@@ -8,7 +8,10 @@ get predicted as it is a standard model). The results of the notebook are placed
 
 ### predicted: 
 
-   ![inference1](https://user-images.githubusercontent.com/60026221/230815812-5d26c5ac-e43e-45ba-a49c-929dbb060e2c.PNG)
+   ![inference1](https://user-images.githubusercontent.com/60026221/230815812-5d26c5ac-e43e-45ba-a49c-929dbb060e2c.PNG) ,
+   ![inference2](https://user-images.githubusercontent.com/60026221/230816131-67c284b0-29f5-4bb3-b8d5-6eac81065d4e.PNG) ,
+   ![inference3](https://user-images.githubusercontent.com/60026221/230816136-e457f268-7c89-48a0-b99e-b5c8679afb3c.PNG)
+
 
 
 # Pretrained-Yolov3 
