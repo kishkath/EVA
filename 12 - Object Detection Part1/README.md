@@ -8,7 +8,7 @@ get predicted as it is a standard model). The results of the notebook are placed
 
 ### predicted: 
 
-      ![inference1](https://user-images.githubusercontent.com/60026221/230815812-5d26c5ac-e43e-45ba-a49c-929dbb060e2c.PNG)
+   ![inference1](https://user-images.githubusercontent.com/60026221/230815812-5d26c5ac-e43e-45ba-a49c-929dbb060e2c.PNG)
 
 
 # Pretrained-Yolov3 
@@ -59,7 +59,7 @@ we modify the number of filters, as we will be using 3 anchors, we do get filter
 
 ### Predicted: 
 
-    ![inference5](https://user-images.githubusercontent.com/60026221/230815972-f8d06708-fdfe-4da7-af71-a6c7de542a80.PNG)
+   ![inference5](https://user-images.githubusercontent.com/60026221/230815972-f8d06708-fdfe-4da7-af71-a6c7de542a80.PNG)
 
 
 Analysis: As all the 4 class images are picked from 'google', each image consists of only a single object (for few images, there exists helmet, bat in a single image). But our testing data (i,e,,) output videos are of the real videos of cricket match, and the model performed good as per data. As from the videos, it is not been able to predict bat due to its movement which is very quick while a person is batting. Helmet and umpire has better predictions. The following iteration has to be made by adding few more images with the real-time images. So, to make it better have taken the output videos of run1 and extracted the frames from it and has trained run2 on those images along with addition some more frames of multiple videos.
