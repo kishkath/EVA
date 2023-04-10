@@ -1,4 +1,6 @@
-# YOLO(YOU LOOK ONLY ONCE), An object-detector which works on anchors(choosing different types of boxes, and choosing the best of best after the comparison with Ground-truth data). 
+# YOLO(YOU LOOK ONLY ONCE): 
+
+  An object-detector which works on anchors(choosing different types of boxes, and choosing the best of best after the comparison with ground-truth data. 
 
 Blogs:
 -----
