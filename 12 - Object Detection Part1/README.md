@@ -6,7 +6,9 @@ Opencv, a popular open-source library where one can use it for image processings
 
 YOLO(You Look Only Once), a cnn based architecture where the image will be seen only once through the iteration. The repo has been cloned from
   
-https://github.com/theschoolofai?tab=repositories, and have made a forked version by making following changes that have been made to the respective files. 
+https://github.com/theschoolofai?tab=repositories
+
+and have made a forked version by making following changes that have been made to the respective files. 
 
 The cloning and making the training has been done directly after cloning the repo with out making changes in the middle.
 
@@ -15,29 +17,29 @@ The following changes have been made to the forked version of repo:
 1. Yolov3-custom.cfg: A config file in 'cfg' folder, which has all the necessary configurations to get the model learn from data and here
 we modify the number of filters, as we will be using 3 anchors, we do get filters in the final layer as (4+1+4)*3 = 27 filters and need to modify the classes as number of classes we are using. 
 
-Line No: 636-643, 722-729, 809-816 
+     Line No: 636-643, 722-729, 809-816 
 
 2. utils.py : A python module in 'utils' folder where we convert tensors to long() tensors & also modify them to be with gpu instead of cpu.
 
-Line No: After 394 :  b,a,gj,gi = b.long(),a.long(),gj.long(),gi.long()
-Line No: Above 475 :  t = t.to(targets.device), a = a.to(targets.device) 
-Line No: 877       :  type casting of float to int.
+       Line No: After 394 :  b,a,gj,gi = b.long(),a.long(),gj.long(),gi.long()
+       Line No: Above 475 :  t = t.to(targets.device), a = a.to(targets.device) 
+       Line No: 877       :  type casting of float to int.
 
 3. train.py : A python file which will be used for training purpose.
 
-Line No: 82 : Modifying the access of value of dictionary for test_path, from 'valid' to 'test'
-Line No: 195: Setting rect = False for testloader set.
+       Line No: 82 : Modifying the access of value of dictionary for test_path, from 'valid' to 'test'
+       Line No: 195: Setting rect = False for testloader set.
 
 4. test.py  : For testing/validation purposes.
 
-Line No: 55 : Same as change in train.py
+       Line No: 55 : Same as change in train.py
 
 classes used: 
 
-1. A cricket 'bat' 
-2. Cricket 'helmet'
-3. 'smart_watch' 
-4. 'umpire'
+     1. A cricket 'bat' 
+     2. Cricket 'helmet'
+     3. 'smart_watch' 
+     4. 'umpire'
 
 ### First Iteration: 
 
