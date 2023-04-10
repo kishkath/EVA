@@ -38,7 +38,7 @@ we modify the number of filters, as we will be using 3 anchors, we do get filter
 
        Line No: 55 : Same as change in train.py
 
-classes used: 
+### classes used: 
 
        1. A cricket 'bat' 
        2. Cricket 'helmet'
@@ -55,4 +55,4 @@ classes used:
 Analysis: As all the 4 class images are picked from 'google', each image consists of only a single object (for few images, there exists helmet, bat in a single image). But our testing data (i,e,,) output videos are of the real videos of cricket match, and the model performed good as per data. As from the videos, it is not been able to predict bat due to its movement which is very quick while a person is batting. Helmet and umpire has better predictions. The following iteration has to be made by adding few more images with the real-time images. So, to make it better have taken the output videos of run1 and extracted the frames from it and has trained run2 on those images along with addition some more frames of multiple videos.
 
 
-** Need to add run2 Notebook & results**
+**Need to add run2 Notebook & results**
