@@ -1,3 +1,11 @@
+# YOLO(YOU LOOK ONLY ONCE), An object-detector which works on anchors(choosing different types of boxes, and choosing the best of best after the comparison with Ground-truth data). 
+
+Blogs:
+-----
+
+* Family of Yolo: https://blog.roboflow.com/guide-to-yolo-models/
+* YoloV3        : https://medium.datadriveninvestor.com/yolov3-you-only-look-once-12de76ad74d5
+
 # YoloV3
 
 Opencv, a popular open-source library where one can use it for image processings. This opencv library has made a library with darknet which will include the YoloV3
